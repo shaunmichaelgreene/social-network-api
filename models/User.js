@@ -1,6 +1,6 @@
 const { Schema, model } = require('mongoose');
 
-constUserSchema = new Schema(
+const UserSchema = new Schema(
     {
         username: {
             type: String,
@@ -12,7 +12,8 @@ constUserSchema = new Schema(
             type: String,
             required: true,
             unique: true,
-            match: /d/ //insert regex
+            match: /.+\@.+\..+/,
+            trim: true
         },
         thoughts: [
             {

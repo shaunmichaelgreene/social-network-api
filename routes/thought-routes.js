@@ -24,7 +24,7 @@ router
 
 
 // /api/thoughts/<userId>
-router.route('/:userId').post(addThought);
+router.route('/:userId').post(createThought);
 
 // /api/thoughts/<userId>/<thoughtId
 router
