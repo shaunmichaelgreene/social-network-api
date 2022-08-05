@@ -12,7 +12,6 @@ const userController = {
                 res.sendStatus(400);
             });
     },
-
     //get user by id
     getUserById({ params }, res) {
         User.findOne({ _id: params.id })
